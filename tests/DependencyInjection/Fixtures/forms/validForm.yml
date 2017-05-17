@@ -1,0 +1,32 @@
+firstTestForm:
+  id: 'secret-agent'
+  theme: 'form/fields.html.twig'
+  data_class: 'testfoo'
+  fields:
+      name:
+        type: 'text'
+        value: 'Test Text'
+        options:
+          label: 'Name'
+          required: true
+      age:
+        type: 'integer'
+        value: 40
+        options:
+          label: 'Ages'
+      country:
+        type: 'country'
+        value: 'GB'
+        options:
+          label: 'Country'
+
+
+secondTestForm:
+  id: 'ice-cream'
+  theme: 'bootstrap_3_layout.html.twig'
+  data_class: 'testfoo'
+  fields:
+      flavour:
+        type: 'url'
+
+

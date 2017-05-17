@@ -1,0 +1,34 @@
+example_form_one:
+  id: 'first-example'
+  theme: 'bootstrap_3_layout.html.twig'
+  fields:
+      text-example:
+        type: 'text'
+        value: 'This is an example'
+        options:
+          label: 'Text Example'
+          required: true
+      number-example:
+        type: 'integer'
+        value: 40
+        options:
+          label: 'Number Example'
+      country-example:
+        type: 'country'
+        value: 'GB'
+        options:
+          label: 'Country Example'
+
+
+example_form_two:
+  id: 'second-example'
+  theme: 'bootstrap_3_layout.html.twig'
+  fields:
+      range-example:
+        type: 'range'
+        options:
+          label: 'Range Example'
+          required: true
+
+
+

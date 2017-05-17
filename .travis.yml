@@ -1,0 +1,25 @@
+language: php
+
+php:
+  - 7.0
+  - 7.1
+
+env:
+  global:
+    - CODECLIMATE_REPO_TOKEN="c1a7acf6272d65a448478c61ad255a2e88b63a309e4c1ecd4905349fa0350ca2"
+
+addons:
+  code_climate:
+    repo_token: ${CODECLIMATE_REPO_TOKEN}
+
+install:
+  - composer update --optimize-autoloader --no-progress --no-interaction
+
+script:
+  - build/travis.sh
+
+notifications:
+  email: false
+
+after_success:
+  - vendor/bin/test-reporter

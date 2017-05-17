@@ -1,0 +1,4 @@
+root_paths: [ '%kernel.root_dir%' ]
+directory_paths: [ 'forms' ]
+file_names : [ 'validForm.yml' ]
+form_class_prefix: Symfony\Component\Form\Extension\Core\Type\

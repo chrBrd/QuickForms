@@ -1,0 +1,19 @@
+parameters:
+    quick_forms.config_defaults_path: '__BUNDLE_DIR__/Fixtures/defaults/defaults.yml'
+    quick_forms.default_data_classname: 'BinarySpanner\QuickForms\Entity\QuickFormsData'
+    quick_forms.default_form_type_classname: 'BinarySpanner\QuickForms\Type\QuickFormsType'
+
+services:
+    quick_forms.default_data_class:
+        class: '%quick_forms.default_data_classname%'
+    quick_forms.default_form_type:
+        class: '%quick_forms.default_form_type_classname%'
+    quick_forms:
+        class: BinarySpanner\QuickForms\Service\QuickForms
+        arguments:
+            - '%quick_forms.forms_setup_info%'
+            - '@quick_forms.default_data_class'
+            - '@quick_forms.default_form_type'
+            - '@form.factory'
+            - '@service_container'
+

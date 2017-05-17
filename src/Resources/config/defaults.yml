@@ -1,0 +1,4 @@
+root_paths: [ '%kernel.root_dir%', '__BUNDLE_DIR__' ]
+directory_paths: [ 'Resources/forms' ]
+file_names : [ 'fallback.yml' ]
+form_class_prefix: Symfony\Component\Form\Extension\Core\Type\

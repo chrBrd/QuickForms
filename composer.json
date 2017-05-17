@@ -1,0 +1,35 @@
+{
+    "name": "binaryspanner/quickforms",
+    "description": "A Symfony bundle to allow the creation of forms from YML files.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BinarySpanner\\QuickForms\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BinarySpanner\\QuickForms\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^7.0",
+        "symfony/form": "^3.2",
+        "symfony/http-kernel": "^3.2",
+        "symfony/dependency-injection": "^3.2",
+        "symfony/config": "^3.2",
+        "symfony/filesystem": "^3.2",
+        "symfony/yaml": "^3.2"
+    },
+    "require-dev": {
+        "phpspec/prophecy": "^1.7",
+        "phpunit/phpunit": "^6.1",
+        "symfony/symfony": "^3.2",
+        "symfony/phpunit-bridge": "3.3.x-dev",
+        "squizlabs/php_codesniffer": "^3.0",
+        "sebastian/phpcpd": "^3.0",
+        "phpmd/phpmd": "^2.6",
+        "codeclimate/php-test-reporter": "^0.4"
+    }
+}
