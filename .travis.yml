@@ -6,7 +6,7 @@ php:
 
 env:
   global:
-    - CODECLIMATE_REPO_TOKEN="c1a7acf6272d65a448478c61ad255a2e88b63a309e4c1ecd4905349fa0350ca2"
+    - CODECLIMATE_REPO_TOKEN="297fbc2121a7a007123cce9bdfb0db08067d12e0ee2a752e3b538f612e6a55e2"
 
 addons:
   code_climate:
