@@ -9,6 +9,8 @@ namespace BinarySpanner\QuickForms\Entity;
 
 interface QuickFormsDataInterface
 {
+    // TODO This method a little too rigid, but it might have to be given the current way the bundle loads in data.
+    // todo Look into making it more flexible.
     /**
      * Get a field's data.
      *

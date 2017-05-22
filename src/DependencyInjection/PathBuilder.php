@@ -58,6 +58,7 @@ class PathBuilder
             $directoryPaths = $this->pathComponents['directoryPaths'];
         }
 
+        // TODO File names aren't really optional as a default is set. Possibly better to accept a wildcard?
         // File names are optional.
         if (!$fileNames) {
             $fileNames = $this->pathComponents['fileNames'];
